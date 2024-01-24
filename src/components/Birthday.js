@@ -32,7 +32,7 @@ const Birthday = () => {
       <button
         onClick={clearAll}
         role='clear-btn'
-        className={`bg-blue-500 w-full py-1 rounded-md text-white font-normal cursor-pointer tracking-wide ${birthdayData.length===0?'mt-4':'mt-2'}`}
+        className={`bg-pink-500 w-full py-1 rounded-md text-white font-normal cursor-pointer tracking-wide ${birthdayData.length===0?'mt-4':'mt-2'}`}
       >
         Clear All
       </button>
