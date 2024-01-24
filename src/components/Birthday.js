@@ -16,7 +16,7 @@ const Birthday = () => {
       {birthdayData.map((birthday) => {
         let { id, name, age, image } = birthday;
         return (
-          <article key={id} className="flex my-6">
+          <article role='card' key={id} className="flex my-6">
             <img
               src={image}
               alt=""
@@ -31,12 +31,13 @@ const Birthday = () => {
       })}
       <button
         onClick={clearAll}
-        className={`bg-pink-500 w-full py-1 rounded-md text-white font-normal cursor-pointer tracking-wide ${birthdayData.length===0?'mt-4':'mt-2'}`}
+        role='clear-btn'
+        className={`bg-blue-500 w-full py-1 rounded-md text-white font-normal cursor-pointer tracking-wide ${birthdayData.length===0?'mt-4':'mt-2'}`}
       >
         Clear All
       </button>
     </section>
-  );
+  )
 }
 
 export default Birthday
